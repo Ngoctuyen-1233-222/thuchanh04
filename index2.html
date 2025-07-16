@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="name" type="text" placeholder="In put your name">
+    <button id="btnCheck">Check</button>
+    <p id="result"></p>
+    <script>
+        var nameinput = document.getElementById("name");
+        var Checkbutton = document.getElementById("btnCheck");
+        var result = document.getElementById("result");
+
+        btnCheck.onclick = function() {
+            var fullName = nameinput.value.trim();
+            var words = fullName.split(" ");
+            var lastName = words[words.length - 1];
+            result.innerText = "Hello " + lastName;
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
